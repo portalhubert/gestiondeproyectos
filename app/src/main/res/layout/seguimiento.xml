@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".TrackingActivity">
+
+    <EditText
+        android:id="@+id/etTaskName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre de tarea" />
+
+    <EditText
+        android:id="@+id/etProgress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etTaskName"
+        android:layout_marginTop="16dp"
+        android:inputType="number"
+        android:hint="Ingresar rogreso" />
+
+    <Button
+        android:id="@+id/btnUpdateProgress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etProgress"
+        android:layout_marginTop="16dp"
+        android:text="actualizar progreso" />
+
+</RelativeLayout>
